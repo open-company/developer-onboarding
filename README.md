@@ -12,8 +12,6 @@ Information for new developers.
 
 ## Technical Values
 
-Technical Values
-
 **KISS** - *K*eep *I*t *S*imple *S*tupid - Complexity is our enemy. We need to solve the complexity inherent in the problems we face using simple solutions, and avoid introducing complexity that isn’t inherent. Solution complexity is rejected, rather than dealt with. We ask [5 whys](http://en.wikipedia.org/wiki/5_Whys) about complexity. What can be relaxed or changed to make the complexity go away?
 
 **YAGNI** - **Y**ou **A**in’t **G**onna **N**eed **I**t - This is the answer to much introduced complexity. We force complexity upon ourselves by being so good at asking "But what if...?" Instead, we build for the problems we have today, not for the problems we think we might have someday. None of us are fortune tellers. We’re mostly wrong.
@@ -161,7 +159,7 @@ Other:
 
 ## Code of Conduct
 
-The [code of conduct](https://github.com/open-company/developer-onboarding/blob/master/CODE_OF_CONDUCT.md) will be followed at all times.
+The [code of conduct](https://github.com/open-company/developer-onboarding/blob/master/CODE-OF-CONDUCT.md) will be followed at all times.
 
 ## License
 
