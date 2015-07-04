@@ -117,6 +117,8 @@ Other:
 
 * [Leiningen](http://leiningen.org/) - declarative dependency management and build tool (via plugins)
 * [Boot](https://github.com/boot-clj/boot) - functional build and dependency management tool
+* [Clojurians on Slack](http://clojurians.net/)
+* [Clojure email list](https://groups.google.com/d/forum/clojure)
 
 ### ClojureScript
 
@@ -137,6 +139,7 @@ Reference:
 Other:
 
 * [CLJSFiddle](http://cljsfiddle.net/) - try your ClojureScript online
+* [ClojureScript email list](https://groups.google.com/d/forum/clojurescript)
 
 ### Om
 
