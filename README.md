@@ -159,6 +159,22 @@ Other:
 * [ClojureScript, Om and core.async](http://elbenshira.com/blog/trifecta-clojurescript-om-coreasync/)
 * [Om Tools](https://github.com/Prismatic/om-tools/blob/master/README.md) - library of general-purpose tools for building applications with Om
 
+### RethinkDB
+
+[RethinkDB](http://rethinkdb.com/) is an open-source, multi-modal (document, key/value, relational) database.
+
+Tutorials:
+
+* [Quick Start](http://rethinkdb.com/docs/quickstart/)
+* [Ten-minute Guide](http://rethinkdb.com/docs/guide/javascript/)
+
+Reference:
+
+* [Clojure API Reference](http://apa512.github.io/clj-rethinkdb/)
+
+Other:
+
+* [clj-rethinkdb](https://github.com/apa512/clj-rethinkdb) - a RethinkDB client for Clojure
 
 ## Code of Conduct
 
