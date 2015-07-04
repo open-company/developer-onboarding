@@ -13,29 +13,30 @@ Information for new developers.
 
 Technical Values
 
-**KISS** - *K*eep *I*t *S*imple *S*tupid - Complexity is our enemy. We need to solve the complexity inherent in the problems we face using simple solutions, and avoid introducing complexity that isn’t inherent. Complexity is rejected, rather than dealt with. We ask [5 whys](http://en.wikipedia.org/wiki/5_Whys) about complexity. What can be relaxed or changed to make the complexity go away?
+**KISS** - *K*eep *I*t *S*imple *S*tupid - Complexity is our enemy. We need to solve the complexity inherent in the problems we face using simple solutions, and avoid introducing complexity that isn’t inherent. Solution complexity is rejected, rather than dealt with. We ask [5 whys](http://en.wikipedia.org/wiki/5_Whys) about complexity. What can be relaxed or changed to make the complexity go away?
 
-**YAGNI** - **Y**ou **A**in’t **G**onna **N**eed **I**t - This is the answer to much introduced complexity. Much of the complexity we force upon ourselves by being too good at asking “what if?” Instead, we build for the problems we have today, not for the problems we think we might have someday. None of us are fortune tellers. We’re mostly wrong.
+**YAGNI** - **Y**ou **A**in’t **G**onna **N**eed **I**t - This is the answer to much introduced complexity. We force complexity upon ourselves by being so good at asking "But what if...?" Instead, we build for the problems we have today, not for the problems we think we might have someday. None of us are fortune tellers. We’re mostly wrong.
 
-**No Punting** - No one owns an app, a system a section of code, or a problem. We don’t punt issues off to others just because we weren’t involved in the inception. Everyone works on, and fixes everything. Not knowing how something works doesn’t mean you don’t work on it or fix it, it means the opposite! We seek out every opportunity to work on things we don’t know about (and we fill in any missing documentation as we learn). Everyone on the team is full-stack, no specialists.
+**No Punting** - No one owns an app, a system a section of code, or a problem. We don’t punt issues off to others just because we weren’t involved in the inception. Everyone works on, and fixes everything. Not knowing how something works doesn’t mean you don’t work on it or fix it, it means the opposite! We seek out every opportunity to work on things we don’t know about (and we fill in any missing documentation as we learn). Everyone on the team is full-stack. No specialists.
 
 ## Technical Priorities
 
 1. Simple & DRY with a single responsibility
-  * **DRY** - **D**on’t **R**epeat **Y**ourself - There’s no place for copy and paste. It inevitably bites you in the ass.
-  * **Single Responsibility** - Units of software do 1 thing well, and only 1 thing. This is fractal and applies to lines of code, functions, classes, services, systems, and apps.
+  * **Simple** - see KISS and YAGNI above.
+  * **DRY** - **D**on’t **R**epeat **Y**ourself - there’s no place for copy and paste. It inevitably bites you in the ass.
+  * **Single Responsibility** - units of software do 1 thing well, and only 1 thing. This is fractal and applies to lines of code, functions, classes, services, systems, and apps.
 2. Transparent & manageable - logs, analytics, error reporting, separation of config from code, and real-time adjustments are good
 
-From these 2 top technical priorities come two incredibly important emergent properties: **robustness** and **scalability**
+By following these 2 top technical priorities, we get two important emergent properties: **robustness** and **scalability**
 
 Our full set of technical priorities, in order:
 
-1. Simple & DRY
+1. Simple & DRY with a single responsibility
 2. Transparent & manageable
 3. Secure
 4. Consistent
-5. Tested
-6. Documented
+5. Documented
+6. Tested
 
 Developers are held accountable to these technical priorities. Code reviews are structured around these technical priorities.
 
@@ -49,7 +50,7 @@ Libraries are better than micro-frameworks, which are better than monolithic fra
 
 Observers are better than Pub/Sub, which is better than Queued Data Pipelines, which are better than Synchronous Services. Observers and queues are more robust than synchronous services (eg. HTTP) and should be prefered where appropriate.
 
-We use the right language for the job. We are a polyglot team. We prefer polyglot developers who have learned how to learn.
+We use the right language for the job. We are a polyglot team. We prefer polyglot developers who have learned how to efficiently learn new things.
 
 The right language for the job is generally obvious due to a language feature or library implemented in the language that makes the job a much easier match for our [technical priorities](#technical-priorities). The job becomes much simpler, or more robust, or easier to test, etc.
 
@@ -57,23 +58,23 @@ If the job is general purpose utility computing with no language feature or libr
 
 ## Process Priorities
 
-Production code gets tested. Tests run in [continuous integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration). Not all code needs all kinds of tests (unit, integration, system, acceptance, ...). Pragmatism still rules and strict [test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) is not important to us, we prefer our own version of TDD, thinking-driven development, but automated test development is a core skill of all our developers. Test automation is a key consideration in code reviews.
+Production code gets tested. Tests run in [continuous integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration). Not all code needs all kinds of tests (unit, integration, system, acceptance, ...). Pragmatism still rules and strict [test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) is not important to us (we prefer our own version of TDD, thinking-driven development), but automated test development is a core skill of all our developers and test automation is a key consideration in code reviews.
 
 All services do their best to trap and report errors. Error handling and alerting is a key consideration in code reviews.
 
-Deployment is automated. It’s not done until it ships with automated deployment. It ships as soon as possible. Risk is mitigated by shipping small and incrementally.
+Deployment is automated. It’s not done until it ships with automated deployment. It ships as soon as possible. Risk is mitigated by shipping small changes  incrementally.
 
 All developers write documentation. Documentation is part of code review: did the appropriate docs get created and updated for the addition/change? 
 
 Documentation is well-organized. Even when good docs exist, if the person that needs them doesn’t know where they are or that they exist, they do no good. 
 
-Code is documented too, comments are good! It’s critical to always document why is this code doing what it’s doing. It’s important to document what the code is doing as well, when it’s not obvious.
+Code is documented. Comments are good! It’s always critical to comment on why this code is doing what it’s doing. It’s also important to comment on what the code is doing, when that’s not completely obvious.
 
 ## Coding Guidelines
 
-We're much more interested in ensuring code follows the values and priorities described above than that it follows any particular coding standard. Code formatting is just the small tip of a very large iceberg; poorly formatted code can be programmatically tidied! Poorly done thinking can't be programatically rethought. That being said, there are some guidelines we look for:
+We're much more interested in ensuring code follows the values and priorities described above than that it follows any particular coding standard. Code formatting is just the small tip of a very large iceberg; poorly formatted code can be programmatically tidied, but poorly done thinking can't be programatically rethought. That being said, here are some code guidelines we look for:
 
-* Do your best to conform to the coding style that's here... We like it.
+* Do your best to conform to the coding style that's already there in the repository... That means we like it.
 * Use 2 soft spaces for indentation for white space irrelevant code/data. Use 4 soft spaces for white space relevant code/data.
 * Don't leave trailing spaces after lines.
 * Don't leave trailing new lines at the end of files.
