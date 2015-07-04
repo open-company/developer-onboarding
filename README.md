@@ -7,6 +7,7 @@ Information for new developers.
 * [Architectural Priorities](#architectural-priorities)
 * [Process Priorities](#process-priorities)
 * [Tools](#tools)
+* [Code of Conduct](#code-of-conduct)
 * [License](#license)
 
 ## Technical Values
@@ -156,6 +157,11 @@ Other:
 * [core.async](https://github.com/clojure/core.async) - library for async communication, often used in ClojureScript ([reference](https://clojure.github.io/core.async/))
 * [ClojureScript, Om and core.async](http://elbenshira.com/blog/trifecta-clojurescript-om-coreasync/)
 * [Om Tools](https://github.com/Prismatic/om-tools/blob/master/README.md) - library of general-purpose tools for building applications with Om
+
+
+## Code of Conduct
+
+The [code of conduct](https://github.com/open-company/developer-onboarding/blob/master/CODE_OF_CONDUCT.md) will be followed at all times.
 
 ## License
 
