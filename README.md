@@ -80,7 +80,7 @@ We're much more interested in ensuring code follows the values and priorities de
 * Write comments. Comments are good.
 * Write tests. Tests are good.
 * Don't submit über pull requests, keep your changes focused and atomic.
-* Submit pull requests to the `dev` branch of repos.
+* Submit pull requests to the `mainline` branch of repos.
 * Have fun!
 
 ## Tools
@@ -111,7 +111,7 @@ Libraries:
 * [A Directory of Clojure Libraries](http://clojure-doc.org/articles/ecosystem/libraries_directory.html)
 * [Clojure Libraries](https://clojure-libraries.appspot.com/)
 * [Luminus Useful Libraries for Clojure Web Development](http://www.luminusweb.net/docs/useful_libraries.md)
-* [The Clojrue Toolbox](http://www.clojure-toolbox.com/)
+* [The Clojure Toolbox](http://www.clojure-toolbox.com/)
 
 Other:
 
