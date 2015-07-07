@@ -95,7 +95,6 @@ Tutorials:
 
 * [Clojure From the Ground Up](http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types)
 * [Clojure for the Brave and True](http://www.braveclojure.com/)
-* [Clojure Koans](http://www.4clojure.com/)
 
 References:
 
