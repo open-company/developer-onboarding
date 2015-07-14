@@ -1,5 +1,20 @@
 # Developer Onboarding
 
+> Transparency is the currency of trust, the open sharing of information among parties involved. Often, a decline in transparency is the first indicator of trouble. As transparency declines, trust declines.
+
+> -- [Christopher S. Penn](http://www.christopherspenn.com/)
+
+Build your company in the open with transparency for your co-founders, your team, and your investors. Or share your company's journey with everyone, your customers and the rest of the startup community too.
+
+[OpenCompany.io](https://opencompany.io) is GitHub for the rest of your company:
+
+* **Dashboard** - An easy tool for founders to provide transparency to their teams and beyond.
+* **Founders' Guide** - Tools, best practices and insights from open company founders and their companies.
+* **Open Company Directory** - Founders sharing with their teams and beyond.
+* **Community** - Spread the word and knowledge and inspire more founders to open up.
+
+Like the open companies we promote and support, the [OpenCompany.io](https://opencompany.io) platform is completely transparent. The company supporting this effort, Transparency, LLC, is an open company. The [platform](https://github.com/open-company/open-company-web) is open source software, and open company data is [open data](https://en.wikipedia.org/wiki/Open_data) accessible through this platform API.
+
 Information for new developers.
 
 * [Technical Values](#technical-values)
