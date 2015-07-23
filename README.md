@@ -169,9 +169,10 @@ Tutorials:
 Other:
 
 * [Om Cookbook](https://github.com/omcljs/om-cookbook)
-* [core.async](https://github.com/clojure/core.async) - library for async communication, often used in ClojureScript ([reference](https://clojure.github.io/core.async/))
-* [ClojureScript, Om and core.async](http://elbenshira.com/blog/trifecta-clojurescript-om-coreasync/)
+* [Om Bootstrap](http://om-bootstrap.herokuapp.com/) - library that makes it easy to use Bootstrap's elements and grid with Om
 * [Om Tools](https://github.com/Prismatic/om-tools/blob/master/README.md) - library of general-purpose tools for building applications with Om
+* [ClojureScript, Om and core.async](http://elbenshira.com/blog/trifecta-clojurescript-om-coreasync/)
+* [core.async](https://github.com/clojure/core.async) - library for async communication, often used in ClojureScript ([reference](https://clojure.github.io/core.async/))
 
 ### RethinkDB
 
