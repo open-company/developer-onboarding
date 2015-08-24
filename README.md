@@ -4,16 +4,17 @@
 
 > -- [Christopher S. Penn](http://www.christopherspenn.com/)
 
-Build your company in the open with transparency for your co-founders, your team, and your investors. Or share your company's journey with everyone, your customers and the rest of the startup community too.
+Employees and investors, co-founders and execs, they all want more transparency from their startups, but there’s no consensus about what it means to be transparent, so we've created a platform that makes it easy for startups to be open. What information is essential for everyone to know and how often should it be shared? Why is it important? How will it empower everyone in the business? How should stakeholders be able to ask questions and what sort of answers should they get?
 
-[OpenCompany.io](https://opencompany.io) is GitHub for the rest of your company:
+[OpenCompany.io](https://opencompany.io) is GitHub for the rest of your company.
 
-* **Dashboard** - An easy tool for founders to provide transparency to their teams and beyond.
-* **Founders' Guide** - Tools, best practices and insights from open company founders and their companies.
-* **Open Company Directory** - Founders sharing with their teams and beyond.
-* **Community** - Spread the word and knowledge and inspire more founders to open up.
+When a startup is operating transparently, they can use their information to tell a better story. Real transparency happens when you present key information in a way that inspires new ideas and encourages discussion. Whether it’s the weekly all-hands, a special team update on financing, or a monthly investor report, stakeholders are encouraged to comment and ask questions alongside the information being presented. The interaction allows everyone to be a part of the story.
 
-Like the open companies we promote and support, the [OpenCompany.io](https://opencompany.io) platform is completely transparent. The company supporting this effort, Transparency, LLC, is an open company. The [platform](https://github.com/open-company/open-company-web) is open source software, and open company data is [open data](https://en.wikipedia.org/wiki/Open_data) accessible through the [platform API](https://github.com/open-company/open-company-api).
+Transparency also requires greater accessibility, so everything is kept in one place for stakeholders. This is especially helpful for remote or absent employees and stakeholders that can’t be there for live presentations. It also means there is historical context that helps to bring new employees up to speed, to refresh memories, and to see how the company is evolving by scanning back and forth across time. 
+
+Transparency expectations are changing. Just as open source changed the way we build software, transparency changes how we build successful startups.
+
+Like the open companies we promote and support, the [OpenCompany.io](https://opencompany.io) platform is completely transparent. The company supporting this effort, Transparency, LLC, is an open company. The [platform](https://github.com/open-company/open-company-web) is open source software, and open company data is [open data](https://en.wikipedia.org/wiki/Open_data) accessible through this platform API.
 
 Information for new developers.
 
@@ -25,6 +26,7 @@ Information for new developers.
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
 
+
 ## Technical Values
 
 **KISS** - *K*eep *I*t *S*imple *S*tupid - Complexity is our enemy. We need to solve the complexity inherent in the problems we face using simple solutions, and avoid introducing complexity that isn’t inherent. Solution complexity is rejected, rather than dealt with. We ask [5 whys](http://en.wikipedia.org/wiki/5_Whys) about complexity. What can be relaxed or changed to make the complexity go away?
@@ -32,6 +34,7 @@ Information for new developers.
 **YAGNI** - **Y**ou **A**in’t **G**onna **N**eed **I**t - This is the answer to much introduced complexity. We force complexity upon ourselves by being so good at asking "But what if...?" Instead, we build for the problems we have today, not for the problems we think we might have someday. None of us are fortune tellers. We’re mostly wrong.
 
 **No Punting** - No one owns an app, a system a section of code, or a problem. We don’t punt issues off to others just because we weren’t involved in the inception. Everyone works on, and fixes everything. Not knowing how something works doesn’t mean you don’t work on it or fix it, it means the opposite! We seek out every opportunity to work on things we don’t know about (and we fill in any missing documentation as we learn). Everyone on the team is full-stack. No specialists.
+
 
 ## Technical Priorities
 
@@ -56,6 +59,7 @@ Developers are held accountable to these technical priorities. Code reviews are 
 
 Living these priorities requires hard thinking about the technical problems we face. Code that works is not the goal. Code that works by embodying these priorities, and the appropriate tradeoffs between them, is the goal.
 
+
 ## Architectural Priorities
 
 We build services, not monoliths. Services compose in architecturally sound ways to deliver services to layers higher up the stack.
@@ -69,6 +73,7 @@ We use the right language for the job. We are a polyglot team. We prefer polyglo
 The right language for the job is generally obvious due to a language feature or library implemented in the language that makes the job a much easier match for our [technical priorities](#technical-priorities). The job becomes much simpler, or more robust, or easier to test, etc.
 
 If the job is general purpose utility computing with no language feature or library advantages, we use [Clojure and ClojureScript](#tools) as our default.
+
 
 ## Process Priorities
 
@@ -84,6 +89,7 @@ Documentation is well-organized. Even when good docs exist, if the person that n
 
 Code is documented. Comments are good! It’s always critical to comment on why this code is doing what it’s doing. It’s also important to comment on what the code is doing, when that’s not completely obvious.
 
+
 ## Coding Guidelines
 
 We're much more interested in ensuring code follows the values and priorities described above than that it follows any particular coding standard. Code formatting is just the small tip of a very large iceberg; poorly formatted code can be programmatically tidied, but poorly done thinking can't be programatically rethought. That being said, here are some code guidelines we look for:
@@ -97,6 +103,7 @@ We're much more interested in ensuring code follows the values and priorities de
 * Don't submit über pull requests, keep your changes focused and atomic.
 * Submit pull requests to the `mainline` branch of repos.
 * Have fun!
+
 
 ## Tools
 
@@ -191,9 +198,11 @@ Other:
 
 * [clj-rethinkdb](https://github.com/apa512/clj-rethinkdb) - a RethinkDB client for Clojure
 
+
 ## Code of Conduct
 
-The [code of conduct](https://github.com/open-company/developer-onboarding/blob/master/CODE-OF-CONDUCT.md) will be followed at all times.
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/open-company/developer-onboarding/blob/master/CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
+
 
 ## License
 
