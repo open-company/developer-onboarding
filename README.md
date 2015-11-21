@@ -66,7 +66,7 @@ We build services, not monoliths. Services compose in architecturally sound ways
 
 Libraries are better than micro-frameworks, which are better than monolithic frameworks.
 
-Observers are better than Pub/Sub, which is better than Queued Data Pipelines, which are better than Synchronous Services. Observers and queues are more robust than synchronous services (eg. HTTP) and should be prefered where appropriate.
+Observers are better than Pub/Sub, which is better than Queued Data Pipelines, which are better than Synchronous Services. Observers and queues are more robust than synchronous services (eg. HTTP) and should be preferred where appropriate.
 
 We use the right language for the job. We are a polyglot team. We prefer polyglot developers who have learned how to efficiently learn new things.
 
