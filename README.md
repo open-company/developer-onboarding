@@ -6,7 +6,7 @@
 
 Employees and investors, co-founders and execs, they all want more transparency from their startups, but there's no consensus about what it means to be transparent. OPENcompany is a platform that simplifies how key business information is shared with stakeholders.
 
-When information about growth, finances, ownership and challenges is shared transparently, it inspires new ideas and new levels of stakeholder engagement. OPENcompany makes it easy for founders to engage with employees and investors, creating a sense of ownership and urgency for everyone.
+When information about growth, finances, ownership and challenges is shared transparently, it inspires trust, new ideas and new levels of stakeholder engagement. OPENcompany makes it easy for founders to engage with employees and investors, creating a sense of ownership and urgency for everyone.
 
 [OPENcompany](https://opencompany.io) is GitHub for the rest of your company.
 
