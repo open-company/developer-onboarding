@@ -115,7 +115,7 @@ If the job is general purpose utility computing with no language feature or libr
 
 Tutorials:
 
-* [Clojure From the Ground Up](http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types)
+* [Clojure From the Ground Up](https://aphyr.com/posts/301-clojure-from-the-ground-up-first-principles)
 * [Clojure for the Brave and True](http://www.braveclojure.com/)
 
 References:
