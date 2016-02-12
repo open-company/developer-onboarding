@@ -98,7 +98,7 @@ We're much more interested in ensuring code follows the values and priorities de
 * Use 2 soft spaces for indentation for white space irrelevant code/data. Use 4 soft spaces for white space relevant code/data.
 * Don't leave trailing spaces after lines.
 * Don't leave trailing new lines at the end of files.
-* We prefer defn- to :^private where its use is possible
+* We prefer `defn-` to `:^private` where its use is possible
 * Write comments. Comments are good.
 * Write tests. Tests are good.
 * Don't submit über pull requests, keep your changes focused and atomic.
