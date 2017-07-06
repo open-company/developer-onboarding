@@ -6,15 +6,15 @@
 
 Employees and investors, co-founders and execs, they all want more transparency from their startups, but there's no consensus about what it means to be transparent. OpenCompany is a platform that simplifies how key business information is shared with stakeholders.
 
-When information about growth, finances, ownership and challenges is shared transparently, it inspires new ideas and new levels of stakeholder engagement. OpenCompany makes it easy for founders to engage with employees and investors, creating a sense of ownership and urgency for everyone.
+When information about growth, finances, ownership and challenges is shared transparently, it inspires trust, new ideas and new levels of stakeholder engagement. OpenCompany makes it easy for founders to engage with employees and investors, creating a sense of ownership and urgency for everyone.
 
-[OpenCompany.io](https://opencompany.io) is GitHub for the rest of your company.
+[OpenCompany](https://opencompany.io) is GitHub for the rest of your company.
 
 To maintain transparency, OpenCompany information is always accessible and easy to find. Being able to search or flip through prior updates empowers everyone. Historical context brings new employees and investors up to speed, refreshes memories, and shows how the company is evolving over time.
 
 Transparency expectations are changing. Startups need to change as well if they are going to attract and retain savvy employees and investors. Just as open source changed the way we build software, transparency changes how we build successful startups with information that is open, interactive, and always accessible. The OpenCompany platform turns transparency into a competitive advantage.
 
-Like the open companies we promote and support, the [OpenCompany.io](https://opencompany.io) platform is completely transparent. The company supporting this effort, Transparency, LLC, is an open company. The [platform](https://github.com/open-company/open-company-web) is open source software, and open company data is [open data](https://en.wikipedia.org/wiki/Open_data) accessible through the [platform API](https://github.com/open-company/open-company-api).
+Like the open companies we promote and support, the [OpenCompany](https://opencompany.io) platform is completely transparent. The company supporting this effort, OpenCompany, Inc., is an open company. The [platform](https://github.com/open-company/open-company-web) is open source software, and open company data is [open data](https://en.wikipedia.org/wiki/Open_data) accessible through the [platform API](https://github.com/open-company/open-company-api).
 
 Information for new developers.
 
@@ -29,7 +29,7 @@ Information for new developers.
 
 ## Technical Values
 
-**KISS** - *K*eep *I*t *S*imple *S*tupid - Complexity is our enemy. We need to solve the complexity inherent in the problems we face using simple solutions, and avoid introducing complexity that isn’t inherent. Solution complexity is rejected, rather than dealt with. We ask [5 whys](http://en.wikipedia.org/wiki/5_Whys) about complexity. What can be relaxed or changed to make the complexity go away?
+**KISS** - **K**eep **I**t **S**imple **S**tupid - Complexity is our enemy. We need to solve the complexity inherent in the problems we face using simple solutions, and avoid introducing complexity that isn’t inherent. Solution complexity is rejected, rather than dealt with. We ask [5 whys](http://en.wikipedia.org/wiki/5_Whys) about complexity. What can be relaxed or changed to make the complexity go away?
 
 **YAGNI** - **Y**ou **A**in’t **G**onna **N**eed **I**t - This is the answer to much introduced complexity. We force complexity upon ourselves by being so good at asking "But what if...?" Instead, we build for the problems we have today, not for the problems we think we might have someday. None of us are fortune tellers. We’re mostly wrong.
 
@@ -66,7 +66,7 @@ We build services, not monoliths. Services compose in architecturally sound ways
 
 Libraries are better than micro-frameworks, which are better than monolithic frameworks.
 
-Observers are better than Pub/Sub, which is better than Queued Data Pipelines, which are better than Synchronous Services. Observers and queues are more robust than synchronous services (eg. HTTP) and should be prefered where appropriate.
+Observers are better than Pub/Sub, which is better than Queued Data Pipelines, which are better than Synchronous Services. Observers and queues are more robust than synchronous services (eg. HTTP) and should be preferred where appropriate.
 
 We use the right language for the job. We are a polyglot team. We prefer polyglot developers who have learned how to efficiently learn new things.
 
@@ -98,6 +98,7 @@ We're much more interested in ensuring code follows the values and priorities de
 * Use 2 soft spaces for indentation for white space irrelevant code/data. Use 4 soft spaces for white space relevant code/data.
 * Don't leave trailing spaces after lines.
 * Don't leave trailing new lines at the end of files.
+* We prefer `defn-` to `:^private` where its use is possible
 * Write comments. Comments are good.
 * Write tests. Tests are good.
 * Don't submit über pull requests, keep your changes focused and atomic.
@@ -115,7 +116,7 @@ If the job is general purpose utility computing with no language feature or libr
 
 Tutorials:
 
-* [Clojure From the Ground Up](http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types)
+* [Clojure From the Ground Up](https://aphyr.com/posts/301-clojure-from-the-ground-up-first-principles)
 * [Clojure for the Brave and True](http://www.braveclojure.com/)
 
 References:
@@ -206,6 +207,6 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Developer Onboarding</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://opencompany.io/" property="cc:attributionName" rel="cc:attributionURL">Transparency, LLC</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Developer Onboarding</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://opencompany.io/" property="cc:attributionName" rel="cc:attributionURL">OpenCompany, Inc.</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-Copyright © 2015 Transparency, LLC
+Copyright © 2015-2017 OpenCompany, Inc.
