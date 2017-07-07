@@ -98,7 +98,7 @@ WSS APIs. Others provide their services through the SOS queuing service. A key l
 tokens which are used to provide cross-service authentication and user state. A typical use of the service is through
 the OpenCompany web client.
 
-![System Diagram](https://cdn.rawgit.com/open-company/developer-onboarding/mainline/OC-System.svg)
+![System Diagram](https://cdn.rawgit.com/open-company/developer-onboarding/master/OC-System.svg)
 
 ### Quick Glossary
 
