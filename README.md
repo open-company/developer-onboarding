@@ -22,6 +22,8 @@ Information for new developers.
 * [Technical Priorities](#technical-priorities)
 * [Architectural Priorities](#architectural-priorities)
 * [Process Priorities](#process-priorities)
+* [System Architecture](#system-architecture)
+* [Coding Guidelines](#coding-guidelines)
 * [Tools](#tools)
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
@@ -88,6 +90,51 @@ All developers write documentation. Documentation is part of code review: did th
 Documentation is well-organized. Even when good docs exist, if the person that needs them doesn’t know where they are or that they exist, they do no good. 
 
 Code is documented. Comments are good! It’s always critical to comment on why this code is doing what it’s doing. It’s also important to comment on what the code is doing, when that’s not completely obvious.
+
+## System Architecture
+
+OpenCompany uses a distributed microservices architecture. Many services provide access to themselves via HTTPS and/or
+WSS APIs. Others provide their services through the SOS queuing service. A key linchpin is JWToken authentication
+tokens which are used to provide cross-service authentication and user state. A typical use of the service is through
+the OpenCompany web client.
+
+![System Diagram](https://cdn.rawgit.com/open-company/developer-onboarding/mainline/OC-System.svg)
+
+### Quick Glossary
+
+[Auth RethinkDB](https://github.com/open-company/open-company-auth#technical-design) - RethinkDB data store of users
+
+[Auth Service](https://github.com/open-company/open-company-auth) - Authentication microservice, handles user authentication, Slack single sign-on, and JWToken generation (HTTPS)
+
+[AWS CloudFront](https://aws.amazon.com/cloudfront/) - Content delivery network
+
+[AWS S3](https://aws.amazon.com/s3/) - Simple storage service
+
+[AWS SES](https://aws.amazon.com/ses/) - Simple email service
+
+[AWS SQS](https://aws.amazon.com/sqs/) - Simple queuing service
+
+[Bot Service](https://github.com/open-company/open-company-bot) - Slack bot microservice, handles Slack integration other than single sign-on (HTTPS/SQS)
+
+[Email Service](https://github.com/open-company/open-company-email) - Microservice for outbound content and transactional emails (SQS)
+
+[FileStack](https://www.filestack.com/) - File upload as a service
+
+[Google Sheets](https://www.google.com/sheets/about/) - Spreadsheets in the Google cloud
+
+[Interaction Service](https://github.com/open-company/open-company-interaction) - Engagement microservice, handles user engagement with reactions and comments (HTTPS, WSS)
+
+Notification Service - Event microservice, handles async events and notifications (WSS)
+
+[Proxy Service](https://github.com/open-company/open-company-proxy) - Charting microservice, handles extracting charts from Google Sheets (HTTPS)
+
+[Slack](https://api.slack.com/) - Company chat application
+
+[Storage Service](https://github.com/open-company/open-company-storage) - Persistence microservice, handles information data management and access control (HTTPS)
+
+[Storage RethinkDB](https://github.com/open-company/open-company-storage#technical-design) - RethinkDB data store of user content
+
+[Web UI](https://github.com/open-company/open-company-web) - ClojureScript/React mobile and desktop web client
 
 
 ## Coding Guidelines
