@@ -4,24 +4,32 @@
 
 > -- [Christopher S. Penn](http://www.christopherspenn.com/)
 
-Employees and investors, co-founders and execs, they all want more transparency from their startups, but there's no consensus about what it means to be transparent. OpenCompany is a platform that simplifies how key business information is shared with stakeholders.
+Companies struggle to keep everyone on the same page. People are hyper-connected in the moment but still don’t know what’s happening across the company. Employees and investors, co-founders and execs, customers and community, they all want more transparency. The solution is surprisingly simple and effective - great company updates that build transparency and alignment.
 
-When information about growth, finances, ownership and challenges is shared transparently, it inspires trust, new ideas and new levels of stakeholder engagement. OpenCompany makes it easy for founders to engage with employees and investors, creating a sense of ownership and urgency for everyone.
+With that in mind we designed the [Carrot](https://carrot.io/) application, and the [OpenCompany platform](https://github.com/open-company), based on three principles:
 
-[OpenCompany](https://opencompany.io) is GitHub for the rest of your company.
+1. It has to be easy or no one will play.
+2. The "big picture" should always be visible.
+3. Alignment is valuable beyond the team, too.
 
-To maintain transparency, OpenCompany information is always accessible and easy to find. Being able to search or flip through prior updates empowers everyone. Historical context brings new employees and investors up to speed, refreshes memories, and shows how the company is evolving over time.
+Carrot is a software-as-a-service application powered by the OpenCompany platform. Carrot simplifies how key business information is shared with stakeholders to create alignment.
 
-Transparency expectations are changing. Startups need to change as well if they are going to attract and retain savvy employees and investors. Just as open source changed the way we build software, transparency changes how we build successful startups with information that is open, interactive, and always accessible. The OpenCompany platform turns transparency into a competitive advantage.
+When information about growth, finances, ownership and challenges is shared transparently, it inspires trust, new ideas and new levels of stakeholder engagement. Carrot makes it easy for founders to engage with employees and investors, creating alignment for everyone.
 
-Like the open companies we promote and support, the [OpenCompany](https://opencompany.io) platform is completely transparent. The company supporting this effort, OpenCompany, Inc., is an open company. The [platform](https://github.com/open-company/open-company-web) is open source software, and open company data is [open data](https://en.wikipedia.org/wiki/Open_data) accessible through the [platform API](https://github.com/open-company/open-company-api).
+[Carrot](https://carrot.io/) is GitHub for the rest of your company.
 
-Information for new developers.
+Transparency expectations are changing. Organizations need to change as well if they are going to attract and retain savvy employees and investors. Just as open source changed the way we build software, transparency changes how we build successful companies with information that is open, interactive, and always accessible. Carrot, and the OpenCompany platform, turn transparency into a competitive advantage.
+
+Like the open companies we promote and support, the [OpenCompany](https://github.com/open-company) platform is open and transparent. The company supporting this effort, OpenCompany, LLC, is an open company. The [platform](https://github.com/open-company) is open source software, and open company data is [open data](https://en.wikipedia.org/wiki/Open_data) accessible through the [OpenCompany Storage Service](https://github.com/open-company/open-company-storage).
+
+To get started, head to: [Carrot](https://carrot.io/)
+
+Information for new OpenCompany platform developers:
 
 * [Technical Values](#technical-values)
 * [Technical Priorities](#technical-priorities)
-* [Architectural Priorities](#architectural-priorities)
 * [Process Priorities](#process-priorities)
+* [Architectural Priorities](#architectural-priorities)
 * [System Architecture](#system-architecture)
 * [Coding Guidelines](#coding-guidelines)
 * [Tools](#tools)
@@ -62,6 +70,21 @@ Developers are held accountable to these technical priorities. Code reviews are 
 Living these priorities requires hard thinking about the technical problems we face. Code that works is not the goal. Code that works by embodying these priorities, and the appropriate tradeoffs between them, is the goal.
 
 
+## Process Priorities
+
+Production code gets tested. Tests run in [continuous integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration). Not all code needs all kinds of tests (unit, integration, system, acceptance, ...). Pragmatism still rules and strict [test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) is not important to us (we prefer our own acronym of TDD, thinking-driven development), but automated test development is a core skill of all our developers and test automation is a key consideration in code reviews.
+
+All services do their best to trap and report errors. Error handling and alerting is a key consideration in code reviews.
+
+Deployment is automated. It’s not done until it ships with automated deployment. It ships as soon as possible. Risk is mitigated by shipping small changes  incrementally.
+
+All developers write documentation. Documentation is part of code review: did the appropriate docs get created and updated for the addition/change? 
+
+Documentation is well-organized. Even when good docs exist, if the person that needs them doesn’t know where they are or that they exist, they do no good. 
+
+Code is documented. Comments are good! It’s always critical to comment on why this code is doing what it’s doing. It’s also important to comment on what the code is doing, when that’s not completely obvious.
+
+
 ## Architectural Priorities
 
 We build services, not monoliths. Services compose in architecturally sound ways to deliver services to layers higher up the stack.
@@ -76,20 +99,6 @@ The right language for the job is generally obvious due to a language feature or
 
 If the job is general purpose utility computing with no language feature or library advantages, we use [Clojure and ClojureScript](#tools) as our default.
 
-
-## Process Priorities
-
-Production code gets tested. Tests run in [continuous integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration). Not all code needs all kinds of tests (unit, integration, system, acceptance, ...). Pragmatism still rules and strict [test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) is not important to us (we prefer our own acronym of TDD, thinking-driven development), but automated test development is a core skill of all our developers and test automation is a key consideration in code reviews.
-
-All services do their best to trap and report errors. Error handling and alerting is a key consideration in code reviews.
-
-Deployment is automated. It’s not done until it ships with automated deployment. It ships as soon as possible. Risk is mitigated by shipping small changes  incrementally.
-
-All developers write documentation. Documentation is part of code review: did the appropriate docs get created and updated for the addition/change? 
-
-Documentation is well-organized. Even when good docs exist, if the person that needs them doesn’t know where they are or that they exist, they do no good. 
-
-Code is documented. Comments are good! It’s always critical to comment on why this code is doing what it’s doing. It’s also important to comment on what the code is doing, when that’s not completely obvious.
 
 ## System Architecture
 
@@ -254,6 +263,6 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Developer Onboarding</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://opencompany.io/" property="cc:attributionName" rel="cc:attributionURL">OpenCompany, Inc.</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Developer Onboarding</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://carrot.io/" property="cc:attributionName" rel="cc:attributionURL">OpenCompany, LLC.</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 Copyright © 2015-2017 OpenCompany, Inc.
