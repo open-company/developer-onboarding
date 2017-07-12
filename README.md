@@ -218,9 +218,11 @@ Other:
 
 * [CLJSFiddle](http://cljsfiddle.net/) - try your ClojureScript online
 * [ClojureScript email list](https://groups.google.com/d/forum/clojurescript)
+* [core.async](https://github.com/clojure/core.async) - library for async communication, often used in ClojureScript ([reference](https://clojure.github.io/core.async/))
 
-### Om
+### Rum / Om
 
+[Rum](https://github.com/tonsky/rum) is a ClojureScript interface to [React](http://facebook.github.io/react/).
 [Om](https://github.com/omcljs/om) is a ClojureScript interface to [React](http://facebook.github.io/react/).
 
 Tutorials:
@@ -232,11 +234,13 @@ Tutorials:
 
 Other:
 
+* [Derivatives](https://github.com/martinklepsch/derivatives) - library for deriving needed component state from state atom
+* [Rum wiki](https://github.com/tonsky/rum/wiki)
+* [Rum workshop video](https://www.youtube.com/watch?v=RqHnxkU9TZE)
 * [Om Cookbook](https://github.com/omcljs/om-cookbook)
 * [Om Bootstrap](http://om-bootstrap.herokuapp.com/) - library that makes it easy to use Bootstrap's elements and grid with Om
 * [Om Tools](https://github.com/Prismatic/om-tools/blob/master/README.md) - library of general-purpose tools for building applications with Om
 * [ClojureScript, Om and core.async](http://elbenshira.com/blog/trifecta-clojurescript-om-coreasync/)
-* [core.async](https://github.com/clojure/core.async) - library for async communication, often used in ClojureScript ([reference](https://clojure.github.io/core.async/))
 
 ### RethinkDB
 
