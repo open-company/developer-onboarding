@@ -129,7 +129,7 @@ the OpenCompany web client.
 
 [Interaction Service](https://github.com/open-company/open-company-interaction) - Engagement microservice, handles user engagement with reactions and comments (HTTPS, WSS)
 
-Notification Service - Event microservice, handles async events and notifications (WSS)
+[Change Service](https://github.com/open-company/open-company-change) - Change tracking microservice, handles read/unread state per user and async notifications of new content (WSS)
 
 [Proxy Service](https://github.com/open-company/open-company-proxy) - Charting microservice, handles extracting charts from Google Sheets (HTTPS)
 
