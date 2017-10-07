@@ -99,7 +99,7 @@ If the job is general purpose utility computing with no language feature or libr
 ## System Architecture
 
 OpenCompany uses a distributed microservices architecture. Many services provide access to themselves via HTTPS and/or
-WSS APIs. Others provide their services through the SOS queuing service. A key linchpin is JWToken authentication
+WSS APIs. Others provide their services through the SQS queuing service. A key linchpin is JWToken authentication
 tokens which are used to provide cross-service authentication and user state. A typical use of the service is through
 the OpenCompany web client.
 
@@ -121,6 +121,8 @@ the OpenCompany web client.
 
 [Bot Service](https://github.com/open-company/open-company-bot) - Slack bot microservice, handles Slack integration other than single sign-on (HTTPS/SQS)
 
+[Change Service](https://github.com/open-company/open-company-change) - Change tracking microservice, handles read/unread state per user and async notifications of new content (WSS)
+
 [Email Service](https://github.com/open-company/open-company-email) - Microservice for outbound content and transactional emails (SQS)
 
 [FileStack](https://www.filestack.com/) - File upload as a service
@@ -128,8 +130,6 @@ the OpenCompany web client.
 [Google Sheets](https://www.google.com/sheets/about/) - Spreadsheets in the Google cloud
 
 [Interaction Service](https://github.com/open-company/open-company-interaction) - Engagement microservice, handles user engagement with reactions and comments (HTTPS, WSS)
-
-[Change Service](https://github.com/open-company/open-company-change) - Change tracking microservice, handles read/unread state per user and async notifications of new content (WSS)
 
 [Proxy Service](https://github.com/open-company/open-company-proxy) - Charting microservice, handles extracting charts from Google Sheets (HTTPS)
 
