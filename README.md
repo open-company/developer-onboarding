@@ -4,7 +4,7 @@
 
 > -- [Christopher S. Penn](http://www.christopherspenn.com/)
 
-Companies struggle to keep everyone on the same page. People are hyper-connected in the moment but still don’t know what’s happening across the company. Employees and investors, co-founders and execs, customers and community, they all want more transparency. The solution is surprisingly simple and effective - great company updates that build transparency and alignment.
+Companies struggle to keep everyone on the same page. People are hyper-connected in the moment but still don't know what's happening across the company. Employees and investors, co-founders and execs, customers and community, they all want more transparency. The solution is surprisingly simple and effective - great company updates that build transparency and alignment.
 
 With that in mind we designed the [Carrot](https://carrot.io/) software-as-a-service application, powered by the open source [OpenCompany platform](https://github.com/open-company). The product design is based on three principles:
 
@@ -35,18 +35,18 @@ Information for new OpenCompany platform developers:
 
 ## Technical Values
 
-**KISS** - **K**eep **I**t **S**imple **S**tupid - Complexity is our enemy. We need to solve the complexity inherent in the problems we face using simple solutions, and avoid introducing complexity that isn’t inherent. Solution complexity is rejected, rather than dealt with. We ask [5 whys](http://en.wikipedia.org/wiki/5_Whys) about complexity. What can be relaxed or changed to make the complexity go away?
+**KISS** - **K**eep **I**t **S**imple **S**tupid - Complexity is our enemy. We need to solve the complexity inherent in the problems we face using simple solutions, and avoid introducing complexity that isn't inherent. Solution complexity is rejected, rather than dealt with. We ask [5 whys](http://en.wikipedia.org/wiki/5_Whys) about complexity. What can be relaxed or changed to make the complexity go away?
 
-**YAGNI** - **Y**ou **A**in’t **G**onna **N**eed **I**t - This is the answer to much introduced complexity. We force complexity upon ourselves by being so good at asking "But what if...?" Instead, we build for the problems we have today, not for the problems we think we might have someday. None of us are fortune tellers. We’re mostly wrong.
+**YAGNI** - **Y**ou **A**in't **G**onna **N**eed **I**t - This is the answer to much introduced complexity. We force complexity upon ourselves by being so good at asking "But what if...?" Instead, we build for the problems we have today, not for the problems we think we might have someday. None of us are fortune tellers. We're mostly wrong.
 
-**No Punting** - No one owns an app, a system a section of code, or a problem. We don’t punt issues off to others just because we weren’t involved in the inception. Everyone works on, and fixes everything. Not knowing how something works doesn’t mean you don’t work on it or fix it, it means the opposite! We seek out every opportunity to work on things we don’t know about (and we fill in any missing documentation as we learn). Everyone on the team is full-stack. No specialists.
+**No Punting** - No one owns an app, a system a section of code, or a problem. We don’t punt issues off to others just because we weren't involved in the inception. Everyone works on, and fixes everything. Not knowing how something works doesn't mean you don’t work on it or fix it, it means the opposite! We seek out every opportunity to work on things we don't know about (and we fill in any missing documentation as we learn). Everyone on the team is full-stack. No specialists.
 
 
 ## Technical Priorities
 
 1. Simple & DRY with a single responsibility
   * **Simple** - see KISS and YAGNI above.
-  * **DRY** - **D**on’t **R**epeat **Y**ourself - there’s no place for copy and paste. It inevitably bites you in the ass.
+  * **DRY** - **D**on't **R**epeat **Y**ourself - there's no place for copy and paste. It inevitably bites you in the ass.
   * **Single Responsibility** - units of software do 1 thing well, and only 1 thing. This is fractal and applies to lines of code, functions, classes, services, systems, and apps.
 2. Transparent & manageable - logs, analytics, error reporting, separation of config from code, and real-time adjustments are good
 
@@ -63,7 +63,7 @@ Our full set of technical priorities, in order:
 
 Developers are held accountable to these technical priorities. Code reviews are structured around these technical priorities.
 
-Living these priorities requires hard thinking about the technical problems we face. Code that works is not the goal. Code that works by embodying these priorities, and the appropriate tradeoffs between them, is the goal.
+Living these priorities requires hard thinking about the technical problems we face. Code that works is not the goal. Code that works by embodying these priorities, and the appropriate trade-offs between them, is the goal.
 
 
 ## Process Priorities
@@ -72,13 +72,13 @@ Production code gets tested. Tests run in [continuous integration (CI)](https://
 
 All services do their best to trap and report errors. Error handling and alerting is a key consideration in code reviews.
 
-Deployment is automated. It’s not done until it ships with automated deployment. It ships as soon as possible. Risk is mitigated by shipping small changes  incrementally.
+Deployment is automated. It's not done until it ships with automated deployment. It ships as soon as possible. Risk is mitigated by shipping small changes  incrementally.
 
 All developers write documentation. Documentation is part of code review: did the appropriate docs get created and updated for the addition/change? 
 
-Documentation is well-organized. Even when good docs exist, if the person that needs them doesn’t know where they are or that they exist, they do no good. 
+Documentation is well-organized. Even when good docs exist, if the person that needs them doesn't know where they are or that they exist, they do no good. 
 
-Code is documented. Comments are good! It’s always critical to comment on why this code is doing what it’s doing. It’s also important to comment on what the code is doing, when that’s not completely obvious.
+Code is documented. Comments are good! It’s always critical to comment on why this code is doing what it's doing. It’s also important to comment on what the code is doing, when that's not completely obvious.
 
 
 ## Architectural Priorities
@@ -87,7 +87,7 @@ We build services, not monoliths. Services compose in architecturally sound ways
 
 Libraries are better than micro-frameworks, which are better than monolithic frameworks.
 
-Observers are better than Pub/Sub, which is better than Queued Data Pipelines, which are better than Synchronous Services. Observers and queues are more robust than synchronous services (eg. HTTP) and should be preferred where appropriate.
+Observers are better than Pub/Sub, which is better than Queued Data Pipelines, which are better than Synchronous Services. Observers and queues are more robust than synchronous services (e.g. HTTP) and should be preferred where appropriate.
 
 We use the right language for the job. We are a polyglot team. We prefer polyglot developers who have learned how to efficiently learn new things.
 
@@ -146,7 +146,7 @@ the OpenCompany web client.
 
 ## Coding Guidelines
 
-We're much more interested in ensuring code follows the values and priorities described above than that it follows any particular coding standard. Code formatting is just the small tip of a very large iceberg; poorly formatted code can be programmatically tidied, but poorly done thinking can't be programatically rethought. That being said, here are some code guidelines we look for:
+We're much more interested in ensuring code follows the values and priorities described above than that it follows any particular coding standard. Code formatting is just the small tip of a very large iceberg; poorly formatted code can be programmatically tidied, but poorly done thinking can't be programmatically rethought. That being said, here are some code guidelines we look for:
 
 * Do your best to conform to the coding style that's already there in the repository... That means we like it.
 * Use 2 soft spaces for indentation for white space irrelevant code/data. Use 4 soft spaces for white space relevant code/data.
@@ -161,10 +161,10 @@ We're much more interested in ensuring code follows the values and priorities de
 
 ### Pull Request Process
 
-The purpose of the pull request process is to ensure code and product quality. The reviewer has 2 important responsibilites: code quality via code review, and product quality via QA of the change, ensuring both that the new functionality or fix works as expected and that other related parts of the product haven't regressed.
+The purpose of the pull request process is to ensure code and product quality. The reviewer has 2 important responsibilities: code quality via code review, and product quality via QA of the change, ensuring both that the new functionality or fix works as expected and that other related parts of the product haven't regressed.
 
-1. The creator of the pull request is responible for adequately describing the change being made. The main components of the description are what changed, how it changed, and why it changed, and what steps were taken to fully QA the change.
-1. The creator of the pull request marks themself as the assignee, which signifies they are the primary submitter of the change and will be the one to respond to reviewer's question, comments and requests for changes. If at some point another developer becomes the primary contributor of the change, the assignee is changed.
+1. The creator of the pull request is responsible for adequately describing the change being made. The main components of the description are what changed, how it changed, and why it changed, and what steps were taken to fully QA the change.
+1. The creator of the pull request marks them-self as the assignee, which signifies they are the primary submitter of the change and will be the one to respond to reviewer's question, comments and requests for changes. If at some point another developer becomes the primary contributor of the change, the assignee is changed.
 1. At this point though, the PR is not yet ready for review, it may still be in progress. Once it is ready to be reviewed, the assignee adds the label "ready for review". In the unusual case that the assignee wants the PR reviewed by a specific developer, they can also assign that developer with the reviewer field. NB: This is not usually done and you need a good reason to want a specific reviewer.
 1. At this point, any other developer that sees the PR should do the review, assigning themself with the reviewer field, removing the "ready for review" label, and labeling it with "reviewing". The reviewer reviews the code and performs QA, repeating the steps provided in the PR description *and* thinking critically about what additional QA steps may have been missed by the assignee.
 1. Now the usual back and forth commences between the assignee and the reviewer consisting of questions, comments, ideas, requests, suggestions and changes. NB: Reviews are about the code, not about the people, as an assignee, try to remain objective and not take anything from the reviewer personally, and as a reviewer, be kind and stay focused on the code. 
