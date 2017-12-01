@@ -113,11 +113,11 @@ the OpenCompany web client.
 
 [AWS CloudFront](https://aws.amazon.com/cloudfront/) - Content delivery network
 
-[AWS S3](https://aws.amazon.com/s3/) - Simple storage service
+[AWS S3](https://aws.amazon.com/s3/) - Simple Storage Service
 
-[AWS SES](https://aws.amazon.com/ses/) - Simple email service
+[AWS SES](https://aws.amazon.com/ses/) - Simple Email Service
 
-[AWS SQS](https://aws.amazon.com/sqs/) - Simple queuing service
+AWS SNS/SQS - [Simple Notification Service](https://aws.amazon.com/sns/) and [Simple Queuing Service](https://aws.amazon.com/sqs/)
 
 [Bot Service](https://github.com/open-company/open-company-bot) - Slack bot microservice, handles Slack integration other than single sign-on (HTTPS/SQS)
 
