@@ -121,6 +121,8 @@ the OpenCompany web client.
 
 [Bot Service](https://github.com/open-company/open-company-bot) - Slack bot microservice, handles Slack integration other than single sign-on (HTTPS/SQS)
 
+[Change DynamoDB](https://github.com/open-company/open-company-change#technical-design) - DynamoDB store of change and see events
+
 [Change Service](https://github.com/open-company/open-company-change) - Change tracking microservice, handles read/unread state per user and async notifications of new content (WSS)
 
 [Email Service](https://github.com/open-company/open-company-email) - Microservice for outbound content and transactional emails (SQS)
@@ -157,6 +159,15 @@ We're much more interested in ensuring code follows the values and priorities de
 * Submit pull requests to the `mainline` branch of repos.
 * Have fun!
 
+### Pull Request Process
+
+The purpose of the pull request process is to ensure code and product quality. The reviewer has 2 important responsibilites: code quality via code review, and product quality via QA of the change, ensuring both that the new functionality or fix works as expected and that other related parts of the product haven't regressed.
+
+1. The creator of the pull request marks themself as the assignee, which signifies they are the primary submitter of the change and will be the one to respond to reviewer's question, comments and requests for changes. If at some point another developer becomes the primary contributor of the change, the assignee is changed.
+1. At this point though, the PR is not yet ready for review, it may still be in progress. Once it is ready to be reviewed, the assignee adds the label "ready for review". In the unusual case that the assignee wants the PR reviewed by a specific developer, they can also assign that developer with the reviewer field. NB: This is not usually done and you need a good reason to want a specific reviewer.
+1. At this point, any other developer that sees the PR should do the review, assigning themself with the reviewer field, removing the "ready for review" label, and labeling it with "reviewing".
+1. Now the usual back and forth commences between the assignee and the reviewer consisting of questions, comments, ideas, requests, suggestions and changes. NB: Reviews are about the code, not about the people, as an assignee, try to remain objective and not take anything from the reviewer personally, and as a reviewer be kind and stay focused on the code. 
+1. Once the code is in a place that both the assignee and reviewer are happy with it, it is the assignees responsibility to merge the PR and get the code deployed into production. Any special notes on deployment steps or dependencies should be included in the PR for the reviewer.
 
 ## Tools
 
