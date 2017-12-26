@@ -135,6 +135,8 @@ AWS SNS/SQS - [Simple Notification Service](https://aws.amazon.com/sns/) and [Si
 
 [Proxy Service](https://github.com/open-company/open-company-proxy) - Charting microservice, handles extracting charts from Google Sheets (HTTPS)
 
+[Search Service](https://github.com/open-company/open-company-search) - Microservice for searching and indexing carrot data. (SQS and Elastic Search)
+
 [Slack](https://api.slack.com/) - Company chat application
 
 [Storage Service](https://github.com/open-company/open-company-storage) - Persistence microservice, handles information data management and access control (HTTPS)
@@ -267,6 +269,9 @@ Other:
 
 * [clj-rethinkdb](https://github.com/apa512/clj-rethinkdb) - a RethinkDB client for Clojure
 
+
+### Elastic Search
+https://www.elastic.co/guide/
 
 ## Code of Conduct
 
