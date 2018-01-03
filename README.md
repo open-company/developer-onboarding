@@ -242,14 +242,20 @@ Tutorials:
 * [Om Intermediate Tutorial](https://github.com/omcljs/om/wiki/Intermediate-Tutorial)
 * [Building a Card Game with Om](http://www.railslove.com/stories/my-way-into-clojure-building-a-card-game-with-om-part-1)
 
-Other:
+References:
+
+* [Rum wiki](https://github.com/tonsky/rum/wiki)
+* [Om Cookbook](https://github.com/omcljs/om-cookbook)
+
+Libraries:
 
 * [Derivatives](https://github.com/martinklepsch/derivatives) - library for deriving needed component state from state atom
-* [Rum wiki](https://github.com/tonsky/rum/wiki)
-* [Rum workshop video](https://www.youtube.com/watch?v=RqHnxkU9TZE)
-* [Om Cookbook](https://github.com/omcljs/om-cookbook)
 * [Om Bootstrap](http://om-bootstrap.herokuapp.com/) - library that makes it easy to use Bootstrap's elements and grid with Om
 * [Om Tools](https://github.com/Prismatic/om-tools/blob/master/README.md) - library of general-purpose tools for building applications with Om
+
+Other:
+
+* [Rum workshop video](https://www.youtube.com/watch?v=RqHnxkU9TZE)
 * [ClojureScript, Om and core.async](http://elbenshira.com/blog/trifecta-clojurescript-om-coreasync/)
 
 ### RethinkDB
@@ -270,8 +276,18 @@ Other:
 * [clj-rethinkdb](https://github.com/apa512/clj-rethinkdb) - a RethinkDB client for Clojure
 
 
-### Elastic Search
-https://www.elastic.co/guide/
+### Elasticsearch
+
+Elasticsearch is an open-source, distributed, JSON-based search and analytics engine designed for horizontal scalability, maximum reliability, and easy management.
+
+References:
+
+* [Elastic Stack and Product Documentation](https://www.elastic.co/guide/)
+
+Libraries:
+
+* [http://clojureelasticsearch.info/](Elastich) - an Elasticsearch client for Clojure
+
 
 ## Code of Conduct
 
@@ -282,4 +298,4 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Developer Onboarding</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://carrot.io/" property="cc:attributionName" rel="cc:attributionURL">OpenCompany, LLC.</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-Copyright © 2015-2017 OpenCompany, Inc.
+Copyright © 2015-2018 OpenCompany, Inc.
