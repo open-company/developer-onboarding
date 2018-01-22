@@ -230,33 +230,21 @@ Other:
 * [ClojureScript email list](https://groups.google.com/d/forum/clojurescript)
 * [core.async](https://github.com/clojure/core.async) - library for async communication, often used in ClojureScript ([reference](https://clojure.github.io/core.async/))
 
-### Rum / Om
+### Rum
 
 [Rum](https://github.com/tonsky/rum) is a ClojureScript interface to [React](http://facebook.github.io/react/).
-[Om](https://github.com/omcljs/om) is a ClojureScript interface to [React](http://facebook.github.io/react/).
-
-Tutorials:
-
-* [Zero to Om](https://blog.stephanbehnke.com/zero-to-om/)
-* [Om Basic Tutorial](https://github.com/omcljs/om/wiki/Basic-Tutorial)
-* [Om Intermediate Tutorial](https://github.com/omcljs/om/wiki/Intermediate-Tutorial)
-* [Building a Card Game with Om](http://www.railslove.com/stories/my-way-into-clojure-building-a-card-game-with-om-part-1)
 
 References:
 
 * [Rum wiki](https://github.com/tonsky/rum/wiki)
-* [Om Cookbook](https://github.com/omcljs/om-cookbook)
 
 Libraries:
 
 * [Derivatives](https://github.com/martinklepsch/derivatives) - library for deriving needed component state from state atom
-* [Om Bootstrap](http://om-bootstrap.herokuapp.com/) - library that makes it easy to use Bootstrap's elements and grid with Om
-* [Om Tools](https://github.com/Prismatic/om-tools/blob/master/README.md) - library of general-purpose tools for building applications with Om
 
 Other:
 
 * [Rum workshop video](https://www.youtube.com/watch?v=RqHnxkU9TZE)
-* [ClojureScript, Om and core.async](http://elbenshira.com/blog/trifecta-clojurescript-om-coreasync/)
 
 ### RethinkDB
 
