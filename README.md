@@ -125,6 +125,10 @@ AWS SNS/SQS - [Simple Notification Service](https://aws.amazon.com/sns/) and [Si
 
 [Change Service](https://github.com/open-company/open-company-change) - Change tracking microservice, handles read/unread state per user and async notifications of new content (WSS)
 
+[Notify Service](https://github.com/open-company/open-company-notify) - Service that handles general purpose notifications to users and notifications for mentions in comments and posts.
+
+[Reminder Service](https://github.com/open-company/open-company-reminder) - Service that supports scheduling reminders to users.
+
 [Email Service](https://github.com/open-company/open-company-email) - Microservice for outbound content and transactional emails (SQS)
 
 [FileStack](https://www.filestack.com/) - File upload as a service
@@ -136,6 +140,8 @@ AWS SNS/SQS - [Simple Notification Service](https://aws.amazon.com/sns/) and [Si
 [Proxy Service](https://github.com/open-company/open-company-proxy) - Charting microservice, handles extracting charts from Google Sheets (HTTPS)
 
 [Search Service](https://github.com/open-company/open-company-search) - Microservice for searching and indexing carrot data. (SQS and Elastic Search)
+
+[Slack Router](https://github.com/open-company/open-company-slack-router) - Microservice for receiving slack API events and publishing them to SNS.
 
 [Slack](https://api.slack.com/) - Company chat application
 
