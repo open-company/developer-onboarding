@@ -28,6 +28,7 @@ Information for new OpenCompany platform developers:
 * [Architectural Priorities](#architectural-priorities)
 * [System Architecture](#system-architecture)
 * [Coding Guidelines](#coding-guidelines)
+* [Getting Started](#getting-started)
 * [Tools](#tools)
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
@@ -125,19 +126,24 @@ AWS SNS/SQS - [Simple Notification Service](https://aws.amazon.com/sns/) and [Si
 
 [Change Service](https://github.com/open-company/open-company-change) - Change tracking microservice, handles read/unread state per user and async notifications of new content (WSS)
 
-[Notify Service](https://github.com/open-company/open-company-notify) - Service that handles general purpose notifications to users and notifications for mentions in comments and posts.
-
-[Reminder Service](https://github.com/open-company/open-company-reminder) - Service that supports scheduling reminders to users.
+[Digest Service](https://github.com/open-company/open-company-digest) - Digest microservice, sends a daily digest to each Carrot user in their local timezone.
 
 [Email Service](https://github.com/open-company/open-company-email) - Microservice for outbound content and transactional emails (SQS)
 
 [FileStack](https://www.filestack.com/) - File upload as a service
 
-[Google Sheets](https://www.google.com/sheets/about/) - Spreadsheets in the Google cloud
-
 [Interaction Service](https://github.com/open-company/open-company-interaction) - Engagement microservice, handles user engagement with reactions and comments (HTTPS, WSS)
 
-[Proxy Service](https://github.com/open-company/open-company-proxy) - Charting microservice, handles extracting charts from Google Sheets (HTTPS)
+[Notify Service](https://github.com/open-company/open-company-notify) - Service that handles general purpose notifications to users and notifications for mentions in comments and posts.
+
+[Notify DynamoDB](https://github.com/open-company/open-company-notify#technical-design) - DynamoDB store of notifications
+
+[OpenCompany Lib](https://github.com/open-company/open-company-lib) -
+A library of shared Clojure namespaces across the OpenCompany platform.
+
+[RethinkDB](https://www.rethinkdb.com/) - a NoSQL document-oriented data store
+
+[Reminder Service](https://github.com/open-company/open-company-reminder) - Service that supports scheduling reminders to users.
 
 [Search Service](https://github.com/open-company/open-company-search) - Microservice for searching and indexing carrot data. (SQS and Elastic Search)
 
@@ -177,6 +183,16 @@ The purpose of the pull request process is to ensure code and product quality. T
 1. At this point, any other developer that sees the PR should do the review, assigning themself with the reviewer field, removing the "ready for review" label, and labeling it with "reviewing". The reviewer reviews the code and performs QA, repeating the steps provided in the PR description *and* thinking critically about what additional QA steps may have been missed by the assignee.
 1. Now the usual back and forth commences between the assignee and the reviewer consisting of questions, comments, ideas, requests, suggestions and changes. NB: Reviews are about the code, not about the people, as an assignee, try to remain objective and not take anything from the reviewer personally, and as a reviewer, be kind and stay focused on the code. 
 1. Once the code is in a place that both the assignee and reviewer are happy with it, it is the assignees responsibility to merge the PR and get the code deployed into production. Any special notes on deployment steps or dependencies should be included in the PR for the reviewer.
+
+## Getting Started
+
+Prospective users of [Carrot](https://carrot.io/) should get started by going to [Carrot.io](https://carrot.io/). The following local setup is **for developers** wanting to do development on the OpenCompany platform.
+
+There are two main ways to approach development on the OpenCompany platform. You can focus on a single service in isolation, making changes to it and relying on tests to validate correctness, or you can get a full system running locally. Either approach is fine, it just depends on the scope of the change you are attempting as to which approach to choose.
+
+To work on a service in isolation, follow the directions in the README of the respective repository. If you need help determining which repository contains the aspect of the platform you'd like to change, feel free to reach out to the core development team via GitHub.
+
+To get a full development system running with all the core services, follow the steps in the [Getting Started Guide](./GETTING-STARTED.md).
 
 ## Tools
 
