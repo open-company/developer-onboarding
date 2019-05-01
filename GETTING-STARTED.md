@@ -28,7 +28,9 @@ The core services, and the order you should focus on getting them started are:
 
 [Web UI](https://github.com/open-company/open-company-web) - all of these services are there to support the web client. This is the only service that uses [Boot](https://github.com/boot-clj/boot) rather than [Leiningen](https://github.com/technomancy/leiningen).
 
-## Optional Services
+### Optional Services
+
+You can do a lot of development without running any of the following services unless you are working on them or need some of their capabilities for testing or usage comfort.
 
 [Email](https://github.com/open-company/open-company-email) - this is the most common of the "extra" services to be running. Running it results in emails actually being sent.
 
